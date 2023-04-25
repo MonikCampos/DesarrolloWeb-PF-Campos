@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../asset/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <title>Santos Manjares - Reservas</title>
+    <meta name="description"
+        content="¡Bienvenido a Santos Manjares, el mejor restaurante de Buenos Aires! Disfruta de nuestra exquisita gastronomía 
+        en un ambiente cálido y acogedor. Nuestro menú ofrece una amplia variedad de platos tradicionales de la región, preparados con los ingredientes más 
+        frescos y de alta calidad. ¡Ven a deleitarte con nuestros sabores únicos y vive una experiencia gastronómica inolvidable!">
+    <meta name="keywords" content="Buenos Aires, Restaurante, Gastronomía, Barrio Norte, Recoleta, Almuerzo, Cena, Comida, Platos, Menú, Sabores, Tradicional, 
+        Ingredientes frescos, Alta calidad, Experiencia gastronómica, Ambiente cálido, Acogedor, Reservaciones, Eventos, Eventos, Celebraciones, Cena romántica, 
+        Familia, Amigos, Comida vegetariana, Carnes, Postres, Bebidas, Vinos, Cocteles">
+    <meta name="ROBOTS" content="index, follow, all">
+    <meta name="GOOGLEBOOT" content="index, follow, all">
+    <meta name="language" content="Spanish">
+    <meta http-equiv="Content-Language" content="Es">
+    <meta name="author" content="Santos Manjares">
+    <meta name="distribution" content="Global">
+    <meta name="application-name" content="Santos Manjares">
+    <meta name="city" content="Buenos Aire">
+    <meta name="country" content="Argentina">
+    <meta name="resource-type" content="Document">
+    <meta name="doc-type" content="Web Page">
+    <meta name="google-site-verification" content="codigo">
+</head>
+
+<body>
+    <!--inicia portada-->
+    <header class="jumbotron text-light" id="goTop">
+        <strong><img class="logo .img-fluid" src="../asset/img/manjares.png" alt="Santos manjares"></strong>
+        <hr>
+        <h2>Reservá tu mesa</h2>
+        <p>Los sabores que te harán sentir bien. Sabemos lo que te gusta.</p>
+    </header>
+    <!--fin portada-->
+    <main>
+        <!--navbar inicia-->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <a class="navbar-brand" href="../index.html" data-toggle="tooltip" data-placement="bottom" title="Home">
+                <img src="../asset/img/home.png" alt="Menú">
+            </a>
+            <h2 class="text-light scale-up-center">Reservas</h2>
+        </nav>
+        <!--navbar fin-->
+        <!--inicio d-flex menú-->
+        <div class="d-flex flex-column align-items-center">
+            <h2>Dejanos tu datos</h2>
+            <p>Nos comunicaremos a la brevedad</p>
+        </div>
+        <!--fin d-flex menú-->
+        <div class="container imgForm box-shadow">
+            <form>
+                <div>
+                    <label for="email">
+                        <h5>Correo electrónico</h5>
+                    </label>
+                    <input placeholder="Ingresa tu correo electrónico" size=30 type="email" id="email" name="email"
+                        required>
+                </div><br>
+                <div><label for="email">
+                        <h5>¿De dónde eres?</h5>
+                    </label>
+                    <select type="email" id="provincia" name="provincia">
+                        <option value="bsas">Buenos Aires</option>
+                        <option value="cba">Córdoba</option>
+                        <option value="cba">Santa Fe</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div><br>
+                <div>
+                    <label for="message">
+                        <h5>Mensaje</h5>
+                    </label><br>
+                    <textarea cols="30" rows="2" placeholder="Cuántos comensales, día y hora de la reserva" id="message"
+                        name="message" required></textarea>
+                </div>
+                <input class="btn btn-outline-light" type="submit" value="Enviar">
+                <input class="btn btn-outline-light" type="reset" value="Limpiar campos">
+            </form>
+        </div>
+    </main>
+    <!--inicio footer-->
+    <footer class="container-fluid bg-dark text-light">
+        <div class="row">
+            <div class="col-12">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/es/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://twitter.com/?lang=es" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+        <div class="container-fluid justify-content-center">
+            <div class="row">
+                <div class="col-12">
+                    <p>Copyright ©2023 Santos Manjares</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid justify-content-center">
+            <div class="row">
+                <div class="col-12">
+                    <a href="#goTop" class='imgGoTop'>
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--fin footer-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

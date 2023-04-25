@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Edu+NSW+ACT+Foundation:wght@500&display=swap');
+
+//Paleta de Colores
+$colorNegro: black;
+$colorBlanco: white;
+$colorVerde: green;
+$colorGrisOscuro: #343a40;
+$colorGris: grey;
+$colorGradiente1: rgba(255, 255, 255, 0.4);
+$colorGradiente2: rgba(6, 21, 6, 0.7);
+$colorGradiente3: rgba(255, 255, 255, 0.107);
+
+//Fuentes
+$fuenteTitulo: 'Cookie', cursive;;
+$fuenteNormal: 'Edu NSW ACT Foundation', cursive;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//uso de mixin
+@mixin titulosH ($font, $size, $color) {
+    font-family: $font;
+    font-size: $size;
+    color: $color;
+}
+@mixin animaHover ($transformHover, $tansitionHover) {
+    transform: $transformHover;
+    transition: $tansitionHover;
+}
+
+html {
+    border-top: 20px solid $colorGrisOscuro;
+    border-left: 20px solid $colorGrisOscuro;
+    border-right: 20px solid $colorGrisOscuro;
+}
+body {
+    h1 {
+        @include titulosH($fuenteTitulo , 60px , $colorNegro);
+        margin-top: 30px;
+        text-align: center;
+    }
+    h2 {
+        @include titulosH($fuenteTitulo , 45px , $colorNegro);
+        margin-top: 12px;
+    }
+    h3 {
+        @include titulosH($fuenteNormal , 27px , $colorBlanco);
+    }
+    h4 {
+        @include titulosH($fuenteNormal , 30px , $colorVerde);
+    }
+    h5 {
+        @include titulosH($fuenteNormal , 20px , $colorBlanco);
+    }
+    p {
+        @include titulosH($fuenteNormal , 18px , $colorNegro);
+    }
+    button {
+        text-transform: uppercase;
+        font-size: 50px;
+    }
+    button:hover {
+        @include animaHover(scale(1.05), all 0.9s);
+    }
+    iframe {
+        height: 20em;
+        border: 0;
+        width: 100%;
+    }    
+}
+
+header {
+    h2{
+        color: $colorBlanco;
+    }
+    p{
+        color: $colorBlanco;
+    } 
+}
+nav {
+    a {
+        text-transform: uppercase;
+    }
+    a:hover {
+        @include animaHover(scale(1.02), all 0.9s);
+    }
+    img:hover {
+        @include animaHover(scale(1.1), all 0.9s);
+    }
+    .navbar-brand:hover{
+        @include animaHover(scale(1.05), all 0.9s);
+        color: $colorBlanco;
+    }  
+} 
+
+.container-fluid {
+    .card {
+        text-align: center;
+        border: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 5px;
+        img{
+            max-width: 85%;
+            align-self: center;
+        }
+        p {
+            @include titulosH($fuenteNormal , 16px , $colorNegro);
+        }
+    }
+    .cardMenu {
+        text-align: center;
+        padding: 10px;
+        margin: 10px 15px;
+        img{
+            max-width: 85%;
+            align-self: center;
+        }
+        p {
+            @include titulosH($fuenteNormal , 16px , $colorNegro);
+        }
+    }
+}
+.jumbotron {
+    background-color: $colorGradiente1;
+    background-image: url("../img/portada.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    text-shadow: 0 0 5px black;
+    height: 400px;
+    margin-bottom: 0;
+    border-radius: 0;
+    padding: 20px 0 0 20px;
+}
+.container {
+    h2{
+        color: $colorBlanco;
+    }
+}
+.d-flex {
+    p {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+.box-shadow {
+    box-shadow: 10px 10px 15px 0 $colorGradiente2;
+}  
+
+//uso de extend
+.bckImage {
+    background-position: top;
+    background-size: cover;
+    background-repeat: none;
+    border-radius: 18px;
+    background-color: $colorGradiente1;
+}
+.imgBanner1 {
+    background-image: linear-gradient($colorGradiente1,$colorGradiente2), url("../img/cocinera1.jpg");
+    @extend .bckImage;
+    height: 300px;
+    text-align: center;
+    padding-top: 60px;
+}
+.imgBanner2 {
+    background-image: linear-gradient($colorGradiente1, $colorGradiente2), url("../img/eventos.jpg");
+    @extend .bckImage;
+    height: 300px;
+    text-align: center;
+    padding-top: 60px;
+}
+.imgBanner3 {
+    background-image: linear-gradient($colorGradiente1, $colorGradiente2), url("../img/principal.jpg");
+    @extend .bckImage;
+    height: 280px;
+    text-align: center;
+    padding-top: 10px;
+    p {
+        color: $colorBlanco;
+    }
+}
+.imgForm {
+    background: linear-gradient($colorGrisOscuro 70%,$colorBlanco);
+    height: 380px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    border: 20px;
+    text-align: center;
+}
+
+.btnPortada {
+    font-family: $fuenteNormal;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.btn:hover {
+    @include animaHover(scale(1.05), all 0.9s); 
+}
+
+.contacto {
+    text-align: center;
+    i {
+        font-size: 35px;
+        color: $colorVerde;
+        letter-spacing: 30px;
+    }
+    i:hover {
+        color: $colorBlanco;
+        @include animaHover(scale(1.05), all 0.9s);
+    }
+    
+}
+
+.carousel { 
+    i {
+    font-size: 35px;
+    color: $colorVerde;
+    }
+    i:hover {
+        color:$colorBlanco;
+        transform: scale(1.05);
+        transition: all 0.9s;
+    }
+}
+
+.nleft {
+    text-align: center;
+
+}
+.nright {
+    text-align: center;
+    h3 {
+        color: $colorNegro;
+    }
+}
+//inicio Grid
+.galeria {
+    background-color: $colorGrisOscuro;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 200px);
+    padding: 20px;
+    grid-gap: 15px;
+    margin-bottom: 20px;
+    border-left: 15px solid $colorBlanco;
+    border-right: 15px solid $colorBlanco;
+    .imgenGaleria {
+        background-color: $colorGris;
+        border: 1px solid $colorBlanco;
+        background-size: cover;
+        background-position: center;
+        filter: grayscale(100%);
+    }
+    .imgenGaleria:hover {
+        @include animaHover(scale(1.05), all 0.9s);
+        filter: grayscale(0%);
+    }
+    @for $in from 1 through 8 {
+        .img#{$in} {
+            $backgroundImage: "../img/rest" + #{$in}  + ".jpg";
+            background-image: url($backgroundImage);
+        }
+    }
+}
+//fin Grid
+
+footer {
+    text-align: center;
+    height: 130px;
+    padding-top: 20px;
+    a {
+        text-decoration: none;
+        i {
+            font-size: 30px;
+            color: $colorVerde;
+            letter-spacing: 30px;
+        }
+        i:hover {
+            @include animaHover(scale(1.05), all 0.9s);
+            color: $colorBlanco;
+        }
+    }
+    .imgGoTop {
+        i {
+            font-size: 50px;
+            color: $colorVerde;
+            position: fixed;
+            bottom: 10px;
+            width: 30px;
+            height: 30px;
+        }
+        i:hover {
+            @include animaHover(scale(1.05), all 0.9s);
+            color: $colorNegro;
+        }
+    }
+    p {
+        color: $colorBlanco;
+        text-align: center;
+    }
+}
+
+
+//Media queries
+@media only screen and (min-width: 1140px) {
+    .logo {
+        width: 20%;
+        height: 20%;
+    }
+}
+
+@media only screen and (min-width:480px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr 1fr;
+        @for $in from 1 through 8 {
+            .img#{$in} {
+                @if $in==1 {
+                    grid-column: 1/3;
+                    grid-row: 1/2;
+                }
+                @else if $in==2 {
+                    grid-column: 3/4;
+                    grid-row: 1/2;
+                }
+                @else if $in==3 {
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                }
+                @else if $in==4 {
+                    grid-column: 2/4;
+                    grid-row: 2/3;
+                }
+                @else if $in==5 {
+                    grid-column: 1/3;
+                    grid-row: 3/4;
+                }
+                @else if $in==6 {
+                    grid-column: 3/4;
+                    grid-row: 3/4;
+                }
+                @else if $in==7 {
+                    grid-column: 1/2;
+                    grid-row: 4/5;
+                }
+                @else if $in==8 {
+                    grid-column: 2/4;
+                    grid-row: 4/5;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .galeria {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 200px);
+    }
+}
+
+@media only screen and (max-width:1200px) and (min-width:992px) {
+    .imgBanner3 {
+        height: 320px;
+    }
+}
+@media only screen and (max-width:991px) and (min-width:768px) {
+    .imgBanner3 {
+        height: 470px;
+    }
+}
+@media only screen and (max-width:767px) and (min-width:426px) {
+    .imgBanner3 {
+        height: 570px;
+    }
+}
+@media only screen and (max-width:425px){
+    .imgBanner3 {
+        height: 700px;
+    }
+}
+
+@import "_animaciones.scss";
