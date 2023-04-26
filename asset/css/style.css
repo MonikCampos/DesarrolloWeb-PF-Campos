@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cookie&family=Edu+NSW+ACT+Foundation:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -26,23 +27,23 @@ body h2 {
   margin-top: 12px;
 }
 body h3 {
-  font-family: "Edu NSW ACT Foundation", cursive;
-  font-size: 27px;
+  font-family: "Cookie", cursive;
+  font-size: 38px;
   color: white;
 }
 body h4 {
-  font-family: "Edu NSW ACT Foundation", cursive;
+  font-family: "Cookie", cursive;
   font-size: 30px;
   color: green;
 }
 body h5 {
-  font-family: "Edu NSW ACT Foundation", cursive;
+  font-family: "League Spartan", sans-serif;
   font-size: 20px;
   color: white;
 }
 body p {
-  font-family: "Edu NSW ACT Foundation", cursive;
-  font-size: 18px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 20px;
   color: black;
 }
 body button {
@@ -95,7 +96,7 @@ nav .navbar-brand:hover {
   align-self: center;
 }
 .container-fluid .card p {
-  font-family: "Edu NSW ACT Foundation", cursive;
+  font-family: "League Spartan", sans-serif;
   font-size: 16px;
   color: black;
 }
@@ -109,7 +110,7 @@ nav .navbar-brand:hover {
   align-self: center;
 }
 .container-fluid .cardMenu p {
-  font-family: "Edu NSW ACT Foundation", cursive;
+  font-family: "League Spartan", sans-serif;
   font-size: 16px;
   color: black;
 }
@@ -182,7 +183,7 @@ nav .navbar-brand:hover {
 }
 
 .btnPortada {
-  font-family: "Edu NSW ACT Foundation", cursive;
+  font-family: "League Spartan", sans-serif;
   text-transform: uppercase;
   font-size: 50px;
 }
@@ -277,11 +278,14 @@ nav .navbar-brand:hover {
 
 footer {
   text-align: center;
-  height: 130px;
   padding-top: 20px;
+}
+footer h4 {
+  color: white;
 }
 footer a {
   text-decoration: none;
+  color: green;
 }
 footer a i {
   font-size: 30px;
@@ -293,8 +297,14 @@ footer a i:hover {
   transition: all 0.9s;
   color: white;
 }
+footer a:hover {
+  text-decoration: none;
+  transform: scale(1.05);
+  transition: all 0.9s;
+  color: white;
+}
 footer .imgGoTop i {
-  font-size: 50px;
+  font-size: 40px;
   color: green;
   position: fixed;
   bottom: 10px;
@@ -321,6 +331,13 @@ footer p {
   .galeria {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 200px);
+  }
+}
+@media only screen and (min-width: 480px) {
+  body p {
+    font-family: "League Spartan", sans-serif;
+    font-size: 20px;
+    color: black;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {

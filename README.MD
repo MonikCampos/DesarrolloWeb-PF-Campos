@@ -3,11 +3,9 @@
 <h2 align="center">Hi 👋, I'm Mónica Campos</h2>
 <h3 align="center">A passionate frontend developer from Argentina</h3>
 
-- 🔭 I’m currently working on [Restaurante Santos Manjares] (https://monikcampos.github.io/-PreEntrega3-Campos/)
+- I’m currently working on [Restaurante Santos Manjares] (https://monikcampos.github.io/-PreEntrega3-Campos/)
 
-- 🌱 I’m currently learning **Full Stack Web Development**
-
-- 📄 Know about my experiences [www.linkedin.com/in/monicaacampos](www.linkedin.com/in/monicaacampos)
+- I’m currently learning **Full Stack Web Development**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
