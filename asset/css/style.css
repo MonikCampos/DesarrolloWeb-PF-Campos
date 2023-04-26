@@ -4,13 +4,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 html {
   border-top: 20px solid #343a40;
   border-left: 20px solid #343a40;
   border-right: 20px solid #343a40;
+  scroll-behavior: smooth;
 }
 
 body h1 {
@@ -38,7 +38,7 @@ body h4 {
 }
 body h5 {
   font-family: "League Spartan", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   color: white;
 }
 body p {
@@ -97,7 +97,7 @@ nav .navbar-brand:hover {
 }
 .container-fluid .card p {
   font-family: "League Spartan", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: black;
 }
 .container-fluid .cardMenu {
@@ -111,7 +111,7 @@ nav .navbar-brand:hover {
 }
 .container-fluid .cardMenu p {
   font-family: "League Spartan", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: black;
 }
 
@@ -304,10 +304,10 @@ footer a:hover {
   color: white;
 }
 footer .imgGoTop i {
-  font-size: 40px;
+  font-size: 30px;
   color: green;
   position: fixed;
-  bottom: 10px;
+  bottom: 3px;
   width: 30px;
   height: 30px;
 }
@@ -331,13 +331,6 @@ footer p {
   .galeria {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 200px);
-  }
-}
-@media only screen and (min-width: 480px) {
-  body p {
-    font-family: "League Spartan", sans-serif;
-    font-size: 20px;
-    color: black;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -383,24 +376,29 @@ footer p {
     grid-template-rows: repeat(2, 200px);
   }
 }
-@media only screen and (max-width: 1200px) and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .imgBanner3 {
     height: 320px;
   }
 }
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .imgBanner3 {
+    height: 400px;
+  }
+}
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .imgBanner3 {
-    height: 470px;
+    height: 550px;
   }
 }
-@media only screen and (max-width: 767px) and (min-width: 426px) {
-  .imgBanner3 {
-    height: 570px;
-  }
-}
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 767px) and (min-width: 521px) {
   .imgBanner3 {
     height: 700px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .imgBanner3 {
+    height: 800px;
   }
 }
 .sombra_movil {

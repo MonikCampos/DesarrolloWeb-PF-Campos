@@ -21,7 +21,6 @@ sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 //uso de mixin
@@ -40,6 +39,7 @@ html {
     border-top: 20px solid $colorGrisOscuro;
     border-left: 20px solid $colorGrisOscuro;
     border-right: 20px solid $colorGrisOscuro;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -63,7 +63,7 @@ body {
     }
 
     h5 {
-        @include titulosH($fuenteNormal, 20px, $colorBlanco);
+        @include titulosH($fuenteNormal, 25px, $colorBlanco);
     }
 
     p {
@@ -129,7 +129,7 @@ nav {
         }
 
         p {
-            @include titulosH($fuenteNormal, 16px, $colorNegro);
+            @include titulosH($fuenteNormal, 18px, $colorNegro);
         }
     }
 
@@ -144,7 +144,7 @@ nav {
         }
 
         p {
-            @include titulosH($fuenteNormal, 16px, $colorNegro);
+            @include titulosH($fuenteNormal, 18px, $colorNegro);
         }
     }
 }
@@ -338,10 +338,10 @@ footer {
     }
     .imgGoTop {
         i {
-            font-size: 40px;
+            font-size: 30px;
             color: $colorVerde;
             position: fixed;
-            bottom: 10px;
+            bottom: 3px;
             width: 30px;
             height: 30px;
         }
@@ -372,13 +372,6 @@ footer {
     }
 }
 
-@media only screen and (min-width:480px) {
-    body {
-        p {
-            @include titulosH($fuenteNormal, 20px, $colorNegro);
-        }
-    }
-}
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .galeria {
         grid-template-columns: 1fr 1fr 1fr;
@@ -436,27 +429,32 @@ footer {
     }
 }
 
-@media only screen and (max-width:1200px) and (min-width:992px) {
+@media only screen and (min-width:1200px) {
     .imgBanner3 {
         height: 320px;
     }
 }
 
+@media only screen and (max-width:1199px) and (min-width:992px) {
+    .imgBanner3 {
+        height: 400px;
+    }
+}
+
 @media only screen and (max-width:991px) and (min-width:768px) {
     .imgBanner3 {
-        height: 470px;
+        height: 550px;
     }
 }
 
-@media only screen and (max-width:767px) and (min-width:426px) {
-    .imgBanner3 {
-        height: 570px;
-    }
-}
-
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:767px) and (min-width:521px) {
     .imgBanner3 {
         height: 700px;
+    }
+}
+@media only screen and (max-width:520px) {
+    .imgBanner3 {
+        height: 800px;
     }
 }
 
