@@ -1,8 +1,0 @@
-Buenas noches profesor, le envío la Proyecto Final. 
-Trabajé en el proyecto de un restaurante: Santos Manjares. 
-Utilicé Bootstrap como framework y Git/Github para el control de versiones. 
-Tiene implementado el pre-procesador Sass. 
-Trabajé con nesting, variables, extends, include, mixin y algunos ciclos for que implementé en la galería de imágenes para recorrerlas y 
-aplicar las propiedades correspondientes.  Agregué algunas animaciones. 
-Creé un archico de animaciones sass y lo incluí dentro del principal sass con import.  
-Además tuve en cuenta las recomendaciones de buenas prácticas y etiquetas para el SEO. 
